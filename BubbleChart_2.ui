@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BubbleChart_2</class>
+ <widget class="QWidget" name="BubbleChart_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>830</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1150</width>
+    <height>830</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>BubbleChart</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 170, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Bubble Chart</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QWebEngineView" name="bubbleChartView2">
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="extractBubbleChartBtn_2">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Extract as Video</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>worldCupMapGraph</class>
+ <widget class="QWidget" name="worldCupMapGraph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Map Graph</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 180, 249);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Map Graph</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QWebEngineView" name="worldCupMapGraphView">
+     <property name="url">
+      <url>
+       <string>about:blank</string>
+      </url>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
